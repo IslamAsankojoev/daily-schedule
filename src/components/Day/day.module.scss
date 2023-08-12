@@ -1,0 +1,52 @@
+.day{
+  width: 15px;
+  height: 15px;
+  border:2px solid transparent;
+  cursor: pointer;
+  position: relative;
+}
+.day:hover{
+  border:2px solid rgba(0, 0, 0, 0.5);
+}
+.active{
+  border:2px solid rgba(0, 0, 0, 0.9);
+}
+.tooltip{
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+  position: absolute;
+  top: 0px;
+  background-color: black;
+  z-index: 2;
+  padding: 10px 10px;
+  border-radius: 5px;
+  white-space: nowrap; 
+  transform: translate(-50%, -120%);
+  left: 50%;
+  text-align: center;
+  transition: .2s ease-in-out;
+}
+.tooltip:hover{
+  opacity: .7;
+}
+
+.tooltip::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.contributions{
+  color:white;
+  margin: 0;
+}
+.date{
+  color:rgb(195, 195, 195);
+  margin: 0;
+  text-transform: capitalize;
+}
