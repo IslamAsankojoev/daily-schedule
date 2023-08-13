@@ -33,8 +33,8 @@ export const getAllDays = (contributions:IDay[]) => {
       }
     });
   
-    return weekWithContributions;
+    return weekWithContributions
   });
 
-  return result
+  return result.reverse();
 }
